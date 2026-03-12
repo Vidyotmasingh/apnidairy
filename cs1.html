@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apni Dairy</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+line-height:1.6;
+color:#333;
+}
+
+header{
+background:#0f8a5f;
+color:white;
+padding:20px 0;
+}
+
+nav{
+width:90%;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav h1{
+font-size:28px;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+gap:20px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+url("https://images.unsplash.com/photo-1550583724-b2692b85b150");
+background-size:cover;
+background-position:center;
+height:70vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h2{
+font-size:48px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:20px;
+}
+
+.hero button{
+padding:12px 25px;
+border:none;
+background:#ffd166;
+font-size:16px;
+cursor:pointer;
+border-radius:5px;
+}
+
+section{
+padding:60px 10%;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:40px;
+font-size:32px;
+color:#0f8a5f;
+}
+
+.menu{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.menu-item{
+border-radius:10px;
+padding:20px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+text-align:center;
+background:white;
+}
+
+.menu-item h3{
+margin-bottom:10px;
+}
+
+.price{
+color:#0f8a5f;
+font-weight:bold;
+font-size:18px;
+}
+
+.about{
+background:#f9f9f9;
+text-align:center;
+}
+
+.testimonials{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.testimonial{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact{
+background:#f4f4f4;
+}
+
+.contact form{
+max-width:600px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.contact input,
+.contact textarea{
+padding:12px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.contact button{
+padding:12px;
+background:#0f8a5f;
+color:white;
+border:none;
+font-size:16px;
+cursor:pointer;
+border-radius:5px;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+@media(max-width:768px){
+.hero h2{
+font-size:34px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<h1>Apni Dairy</h1>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h2>Fresh & Pure Dairy Products</h2>
+<p>Healthy milk and delicious dairy items delivered fresh every day.</p>
+<button>Order Now</button>
+</div>
+</section>
+
+<section id="menu">
+<h2 class="section-title">Our Menu</h2>
+
+<div class="menu">
+
+<div class="menu-item">
+<h3>Fresh Milk</h3>
+<p>Pure farm fresh milk</p>
+<p class="price">₹60 / litre</p>
+</div>
+
+<div class="menu-item">
+<h3>Paneer</h3>
+<p>Soft homemade paneer</p>
+<p class="price">₹320 / kg</p>
+</div>
+
+<div class="menu-item">
+<h3>Curd (Dahi)</h3>
+<p>Thick and creamy curd</p>
+<p class="price">₹80 / kg</p>
+</div>
+
+<div class="menu-item">
+<h3>Butter</h3>
+<p>Fresh white butter</p>
+<p class="price">₹450 / kg</p>
+</div>
+
+<div class="menu-item">
+<h3>Ghee</h3>
+<p>Pure desi cow ghee</p>
+<p class="price">₹900 / kg</p>
+</div>
+
+<div class="menu-item">
+<h3>Lassi</h3>
+<p>Refreshing sweet lassi</p>
+<p class="price">₹40 / glass</p>
+</div>
+
+</div>
+</section>
+
+<section id="about" class="about">
+<h2 class="section-title">About Apni Dairy</h2>
+<p>At Apni Dairy, we believe in providing fresh and pure dairy products directly from farm to home. Our milk is collected daily from trusted farmers and processed with the highest hygiene standards.</p>
+
+<div class="testimonials">
+
+<div class="testimonial">
+<p>"The milk quality is amazing and always fresh. My family loves it!"</p>
+<strong>- Ravi Sharma</strong>
+</div>
+
+<div class="testimonial">
+<p>"Best paneer and ghee in the area. Highly recommended."</p>
+<strong>- Neha Gupta</strong>
+</div>
+
+<div class="testimonial">
+<p>"Apni Dairy delivers pure products with great service."</p>
+<strong>- Aman Verma</strong>
+</div>
+
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2 class="section-title">Contact Us</h2>
+
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea rows="5" placeholder="Your Message"></textarea>
+<button type="submit">Send Message</button>
+</form>
+
+</section>
+
+<footer>
+<p>© 2026 Apni Dairy | Freshness You Can Trust</p>
+</footer>
+
+</body>
+</html>
